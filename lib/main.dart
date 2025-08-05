@@ -1,4 +1,5 @@
 import 'package:faculdade_flutter/home_page.dart';
+import 'package:faculdade_flutter/widgets/app_title.dart';
 import 'package:flutter/material.dart';
 
 void main() {

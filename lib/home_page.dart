@@ -1,4 +1,5 @@
-import 'package:faculdade_flutter/widgets/welcome_text.dart';
+import 'package:faculdade_flutter/widgets/app_title.dart';
+import 'package:faculdade_flutter/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget{
@@ -10,15 +11,17 @@ class HomePage extends StatelessWidget{
   {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bem vindo ao Flutter.'),
+        title: const Text('Trabalhin?'),
       ),
-      body: const Center(
-        child: WelcomeText(),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: (){
-        print('Botao pressionado.');
-      },
-      child: const Icon(Icons.add),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 100,
+          children: [
+            AppTitle(),
+            CustomButton(),
+          ],
+        ),
       ),
     );
   }
