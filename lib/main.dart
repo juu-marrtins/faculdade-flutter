@@ -1,5 +1,4 @@
-import 'package:faculdade_flutter/home_page.dart';
-import 'package:faculdade_flutter/widgets/app_title.dart';
+import 'package:faculdade_flutter/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,8 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Meu primeiro App',
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: AppRoutes.home,
+      routes: AppRoutes.routes,
     );
   }
 } 
